@@ -5,6 +5,7 @@
     <script src="node_modules/openmct/dist/openmct.js"></script>
     <script src="lib/http.js"></script>
     <script src="dictionary-plugin.js"></script>
+    <script src="historical-telemetry-plugin.js"></script>
 </head>
 <body>
     <script>
@@ -15,6 +16,7 @@
         openmct.install(openmct.plugins.UTCTimeSystem());
 
         openmct.install(DictionaryPlugin());
+        openmct.install(HistoricalTelemetryPlugin());
         openmct.start();
     </script>
 </body>
